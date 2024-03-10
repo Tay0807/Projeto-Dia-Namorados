@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+body{
+    background-image: url(./background.jfif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+button{
+    padding: 10px;
+    margin: 50px;
+    background-color: transparent;
+}
+
+button:hover{
+    text-decoration: underline;
+}

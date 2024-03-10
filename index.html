@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Presentinho</title>
+</head>
+<body>
+    <h1>Você é Wi-fi?</h1>
+    <button id="sim">Sou sim</button>
+    <button id="nao">Não, porque?</button>
+    <div id="res_um"></div>
+    <div id="res_dois"></div>
+    
+</body>
+
+<script>
+    bnt_sim = document.getElementById('sim')
+    bnt_nao = document.getElementById('nao')
+    res_um = document.getElementById('res_um')
+    res_dois = document.getElementById('res_dois')
+    const audio = new Audio('musica.mp3');
+
+    function sim(){
+        res_um.innerHTML = '<h2>Mentira você é um ser humano :|</h2>'
+    }
+
+    function nao(){
+        res_dois.innerHTML = '<h2>Porque nós temos uma ótima conexão ;)</h2>'
+        audio.play()
+    }
+
+    bnt_sim.addEventListener('click', sim)
+    bnt_nao.addEventListener('click', nao)
+</script>
+</html>
